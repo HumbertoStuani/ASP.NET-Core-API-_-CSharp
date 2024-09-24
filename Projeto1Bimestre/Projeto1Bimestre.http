@@ -1,0 +1,6 @@
+@Projeto1Bimestre_HostAddress = http://localhost:5179
+
+GET {{Projeto1Bimestre_HostAddress}}/index.html/
+Accept: application/json
+
+###

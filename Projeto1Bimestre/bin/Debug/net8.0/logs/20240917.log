@@ -1,0 +1,59 @@
+2024-09-17 16:27:52.447 -03:00 [ERR] Erro ao obter validade do cartao
+MySql.Data.MySqlClient.MySqlException (0x80004005): Authentication to host '129.148.59.75' for user 'aluno6' using method 'caching_sha2_password' failed with message: Access denied for user 'aluno6'@'%' to database 'humberto'
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Access denied for user 'aluno6'@'%' to database 'humberto'
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacketAsync(Boolean execAsync)
+   at MySql.Data.MySqlClient.NativeDriver.ReadPacketAsync(Boolean execAsync)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacketAsync(Boolean execAsync)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticationFailed(MySqlException ex)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacketAsync(Boolean execAsync)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ContinueAuthenticationAsync(Boolean execAsync, Byte[] data)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticateAsync(Boolean reset, Boolean execAsync)
+   at MySql.Data.MySqlClient.NativeDriver.AuthenticateAsync(String authMethod, Boolean reset, Boolean execAsync)
+   at MySql.Data.MySqlClient.NativeDriver.OpenAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.NativeDriver.OpenAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.Driver.OpenAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.Driver.CreateAsync(MySqlConnectionStringBuilder settings, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.Driver.CreateAsync(MySqlConnectionStringBuilder settings, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnectionAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnectionAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriverAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlPool.GetConnectionAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlConnection.OpenAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Projeto1Bimestre.Services.CartaoService.ObterValidadeCartao(String numero) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\CartaoService.cs:line 69
+2024-09-17 16:27:52.540 -03:00 [ERR] Erro ao realizar Conexão
+System.Exception: Authentication to host '129.148.59.75' for user 'aluno6' using method 'caching_sha2_password' failed with message: Access denied for user 'aluno6'@'%' to database 'humberto'
+   at Projeto1Bimestre.Services.CartaoService.ObterValidadeCartao(String numero) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\CartaoService.cs:line 86
+2024-09-17 16:27:52.548 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Authentication to host '129.148.59.75' for user 'aluno6' using method 'caching_sha2_password' failed with message: Access denied for user 'aluno6'@'%' to database 'humberto'
+   at Projeto1Bimestre.Services.CartaoService.ObterValidadeCartao(String numero) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\CartaoService.cs:line 96
+   at Projeto1Bimestre.Controllers.CartoesController.ObterValidade(String cartao) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Controllers\CartoesController.cs:line 39
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-17 16:35:14.777 -03:00 [ERR] Erro ao obter validade do cartao
+MySql.Data.MySqlClient.MySqlException (0x80004005): Invalid attempt to access a field before calling Read()
+   at MySql.Data.MySqlClient.ResultSet.get_Item(Int32 index)
+   at MySql.Data.MySqlClient.MySqlDataReader.GetFieldValue(Int32 index, Boolean checkNull)
+   at MySql.Data.MySqlClient.MySqlDataReader.GetValue(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(String name)
+   at Projeto1Bimestre.Services.CartaoService.ObterValidadeCartao(String numero) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\CartaoService.cs:line 82
+2024-09-17 16:35:14.967 -03:00 [ERR] Erro ao realizar Conexão
+System.Exception: Invalid attempt to access a field before calling Read()
+   at Projeto1Bimestre.Services.CartaoService.ObterValidadeCartao(String numero) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\CartaoService.cs:line 92

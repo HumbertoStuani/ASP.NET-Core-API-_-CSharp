@@ -1,0 +1,175 @@
+2024-09-17 16:36:37.010 -03:00 [ERR] Erro ao obter validade do cartao
+MySql.Data.MySqlClient.MySqlException (0x80004005): Invalid attempt to access a field before calling Read()
+   at MySql.Data.MySqlClient.ResultSet.get_Item(Int32 index)
+   at MySql.Data.MySqlClient.MySqlDataReader.GetFieldValue(Int32 index, Boolean checkNull)
+   at MySql.Data.MySqlClient.MySqlDataReader.GetValue(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(String name)
+   at Projeto1Bimestre.Services.CartaoService.ObterValidadeCartao(String numero) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\CartaoService.cs:line 82
+2024-09-17 16:36:37.222 -03:00 [ERR] Erro ao realizar Conexão
+System.Exception: Invalid attempt to access a field before calling Read()
+   at Projeto1Bimestre.Services.CartaoService.ObterValidadeCartao(String numero) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\CartaoService.cs:line 92
+2024-09-17 16:36:37.597 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Invalid attempt to access a field before calling Read()
+   at Projeto1Bimestre.Services.CartaoService.ObterValidadeCartao(String numero) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\CartaoService.cs:line 102
+   at Projeto1Bimestre.Controllers.CartoesController.ObterValidade(String cartao) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Controllers\CartoesController.cs:line 39
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-17 21:05:03.058 -03:00 [ERR] Erro ao obter validade do cartao
+MySql.Data.MySqlClient.MySqlException (0x80004005): There is already an open DataReader associated with this Connection which must be closed first.
+   at MySql.Data.MySqlClient.Interceptors.ExceptionInterceptor.Throw(Exception exception)
+   at MySql.Data.MySqlClient.MySqlConnection.Throw(Exception ex)
+   at MySql.Data.MySqlClient.MySqlCommand.Throw(Exception ex)
+   at MySql.Data.MySqlClient.MySqlCommand.CheckState()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQueryAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Projeto1Bimestre.Services.CartaoService.ObterValidadeCartao(String numero) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\CartaoService.cs:line 87
+2024-09-17 21:05:03.155 -03:00 [ERR] Erro ao realizar Conexão
+System.Exception: There is already an open DataReader associated with this Connection which must be closed first.
+   at Projeto1Bimestre.Services.CartaoService.ObterValidadeCartao(String numero) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\CartaoService.cs:line 105
+2024-09-17 21:05:03.164 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: There is already an open DataReader associated with this Connection which must be closed first.
+   at Projeto1Bimestre.Services.CartaoService.ObterValidadeCartao(String numero) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\CartaoService.cs:line 115
+   at Projeto1Bimestre.Controllers.CartoesController.ObterValidade(String cartao) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Controllers\CartoesController.cs:line 39
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-17 21:07:12.268 -03:00 [ERR] Erro ao obter validade do cartao
+MySql.Data.MySqlClient.MySqlException (0x80004005): There is already an open DataReader associated with this Connection which must be closed first.
+   at MySql.Data.MySqlClient.Interceptors.ExceptionInterceptor.Throw(Exception exception)
+   at MySql.Data.MySqlClient.MySqlConnection.Throw(Exception ex)
+   at MySql.Data.MySqlClient.MySqlCommand.Throw(Exception ex)
+   at MySql.Data.MySqlClient.MySqlCommand.CheckState()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQueryAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Projeto1Bimestre.Services.CartaoService.ObterValidadeCartao(String numero) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\CartaoService.cs:line 87
+2024-09-17 21:07:12.271 -03:00 [ERR] Erro ao realizar Conexão
+System.Exception: There is already an open DataReader associated with this Connection which must be closed first.
+   at Projeto1Bimestre.Services.CartaoService.ObterValidadeCartao(String numero) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\CartaoService.cs:line 105
+2024-09-17 21:07:12.272 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: There is already an open DataReader associated with this Connection which must be closed first.
+   at Projeto1Bimestre.Services.CartaoService.ObterValidadeCartao(String numero) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\CartaoService.cs:line 115
+   at Projeto1Bimestre.Controllers.CartoesController.ObterValidade(String cartao) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Controllers\CartoesController.cs:line 39
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-17 21:07:17.344 -03:00 [ERR] Erro ao obter validade do cartao
+MySql.Data.MySqlClient.MySqlException (0x80004005): There is already an open DataReader associated with this Connection which must be closed first.
+   at MySql.Data.MySqlClient.Interceptors.ExceptionInterceptor.Throw(Exception exception)
+   at MySql.Data.MySqlClient.MySqlConnection.Throw(Exception ex)
+   at MySql.Data.MySqlClient.MySqlCommand.Throw(Exception ex)
+   at MySql.Data.MySqlClient.MySqlCommand.CheckState()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQueryAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Projeto1Bimestre.Services.CartaoService.ObterValidadeCartao(String numero) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\CartaoService.cs:line 87
+2024-09-17 21:07:17.346 -03:00 [ERR] Erro ao realizar Conexão
+System.Exception: There is already an open DataReader associated with this Connection which must be closed first.
+   at Projeto1Bimestre.Services.CartaoService.ObterValidadeCartao(String numero) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\CartaoService.cs:line 105
+2024-09-17 21:07:17.347 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: There is already an open DataReader associated with this Connection which must be closed first.
+   at Projeto1Bimestre.Services.CartaoService.ObterValidadeCartao(String numero) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\CartaoService.cs:line 115
+   at Projeto1Bimestre.Controllers.CartoesController.ObterValidade(String cartao) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Controllers\CartoesController.cs:line 39
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-17 21:22:05.975 -03:00 [ERR] Erro ao obter validade do cartao
+MySql.Data.MySqlClient.MySqlException (0x80004005): There is already an open DataReader associated with this Connection which must be closed first.
+   at MySql.Data.MySqlClient.Interceptors.ExceptionInterceptor.Throw(Exception exception)
+   at MySql.Data.MySqlClient.MySqlConnection.Throw(Exception ex)
+   at MySql.Data.MySqlClient.MySqlCommand.Throw(Exception ex)
+   at MySql.Data.MySqlClient.MySqlCommand.CheckState()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQueryAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Projeto1Bimestre.Services.CartaoService.ObterValidadeCartao(String numero) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\CartaoService.cs:line 87
+2024-09-17 21:22:06.280 -03:00 [ERR] Erro ao realizar Conexão
+System.Exception: There is already an open DataReader associated with this Connection which must be closed first.
+   at Projeto1Bimestre.Services.CartaoService.ObterValidadeCartao(String numero) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\CartaoService.cs:line 101
+2024-09-17 21:22:06.705 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: There is already an open DataReader associated with this Connection which must be closed first.
+   at Projeto1Bimestre.Services.CartaoService.ObterValidadeCartao(String numero) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\CartaoService.cs:line 111
+   at Projeto1Bimestre.Controllers.CartoesController.ObterValidade(String cartao) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Controllers\CartoesController.cs:line 39
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-17 21:36:47.598 -03:00 [ERR] Nenhum cartão foi encontrado com o número fornecido.
+2024-09-17 21:37:34.513 -03:00 [ERR] O cartão foi encontrado, mas está vencido.

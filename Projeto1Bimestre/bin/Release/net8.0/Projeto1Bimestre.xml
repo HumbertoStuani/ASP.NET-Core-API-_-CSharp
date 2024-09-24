@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Projeto1Bimestre</name>
+    </assembly>
+    <members>
+        <member name="M:Projeto1Bimestre.Controllers.CartoesController.ObterBandeira(System.String)">
+            <summary>
+            •	Este endpoint recebe o número do cartão de crédito e retorna sua bandeira (VISA, MASTERCARD, ELO...) de acordo com a regra de negócio fictícia dada a seguir, que considera os primeiros 4 dígitos do número e o 8º do cartão (BIN): 
+            </summary>
+            <param name="cartao"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Projeto1Bimestre.Controllers.CartoesController.ObterValidade(System.String)">
+            <summary>
+            •	Este endpoint recebe o número do cartão de crédito e retorna um valor booleano indicando se o cartão é válido. Isso deve ser feito verificando sua existência e validade do cartão na tabela "CARTAO".
+            </summary>
+            <param name="cartao"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Projeto1Bimestre.Controllers.PagamentosController.CalcularParcelas(Projeto1Bimestre.ViewModel.CalcularParcelaViewModel)">
+            <summary>
+            •	Este endpoint permite calcular o valor das parcelas de um pagamento com base no valor total da transação, a taxa de juros e o número de parcelas desejado. Para tal, necessário enviar no corpo da requisição, o Valor Total (decimal), Taxa de Juros (decimal) e Quantidade de Parcelas (int). 
+            </summary>
+            <param name="calcularParcelaViewModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Projeto1Bimestre.Controllers.PagamentosController.gravarPagamento(Projeto1Bimestre.ViewModel.GravarPagamentoViewModel)">
+            <summary>
+            •	Inicia o processo de pagamento, recebendo os detalhes do pagamento no corpo da requisição: (valor [decimal], número do cartão de crédito [string], CVV [int] e quantidade de parcelas [int]).
+            </summary>
+            <param name="gravarPagamentoViewModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Projeto1Bimestre.Controllers.PagamentosController.ObterSituacao(System.Int32)">
+            <summary>
+            •	Consulta a situação de um pagamento com base no seu ID e retorna apenas a situação do pagamento.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Projeto1Bimestre.Controllers.PagamentosController.CancelarPagamento(System.Int32)">
+            <summary>
+            •	Cancela um pagamento, apenas se ainda não tenha sido confirmado. Troca a situação para "cancelado/3".
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Projeto1Bimestre.Controllers.PagamentosController.ConfirmarPagamento(System.Int32)">
+            <summary>
+            •	Confirma o pagamento do ID informado, trocando a situação para "confirmado/2".
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Projeto1Bimestre.Domain.Cartao.Id">
+            <summary>
+            Numero do Cartao
+            </summary>
+        </member>
+        <member name="P:Projeto1Bimestre.Domain.Cartao.Validade">
+            <summary>
+            Data de validade do cartão.
+            </summary>
+        </member>
+        <member name="P:Projeto1Bimestre.Domain.Transacao.TransacaoId">
+            <summary>
+            Id da Transação
+            </summary>
+        </member>
+        <member name="P:Projeto1Bimestre.Domain.Transacao.Valor">
+            <summary>
+             Valor da Transação
+            </summary>
+        </member>
+        <member name="P:Projeto1Bimestre.Domain.Transacao.Cartao">
+            <summary>
+            Cartão vinculado a Transação
+            </summary>
+        </member>
+        <member name="P:Projeto1Bimestre.Domain.Transacao.CVV">
+            <summary>
+            Código de Segurança do Cartão
+            </summary>
+        </member>
+        <member name="P:Projeto1Bimestre.Domain.Transacao.Parcelas">
+            <summary>
+            Quantidade de Parcelas
+            </summary>
+        </member>
+        <member name="P:Projeto1Bimestre.Domain.Transacao.Situacao">
+            <summary>
+            Situação da Transação
+            </summary>
+        </member>
+        <member name="P:Projeto1Bimestre.ViewModel.CalcularParcelaViewModel.ValorTotal">
+            <summary>
+            Valor Total da Transação
+            </summary>
+        </member>
+        <member name="P:Projeto1Bimestre.ViewModel.CalcularParcelaViewModel.TaxaJuros">
+            <summary>
+            Taxa de Juros aplicada
+            </summary>
+        </member>
+        <member name="P:Projeto1Bimestre.ViewModel.CalcularParcelaViewModel.Parcelas">
+            <summary>
+            Quantidade de parcelas
+            </summary>
+        </member>
+        <member name="P:Projeto1Bimestre.ViewModel.GravarPagamentoViewModel.Valor">
+            <summary>
+            Valor do Pagamento
+            </summary>
+        </member>
+        <member name="P:Projeto1Bimestre.ViewModel.GravarPagamentoViewModel.NumeroCartao">
+            <summary>
+            Número do Cartão Vinculado
+            </summary>
+        </member>
+        <member name="P:Projeto1Bimestre.ViewModel.GravarPagamentoViewModel.CVV">
+            <summary>
+            Código de Segurança do Cartão
+            </summary>
+        </member>
+        <member name="P:Projeto1Bimestre.ViewModel.GravarPagamentoViewModel.QtdeParcelas">
+            <summary>
+            Quantidade de Parcelas
+            </summary>
+        </member>
+    </members>
+</doc>

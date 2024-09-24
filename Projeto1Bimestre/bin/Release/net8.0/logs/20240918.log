@@ -1,0 +1,143 @@
+2024-09-18 21:36:59.729 -03:00 [ERR] Nenhum cartão foi encontrado com o número fornecido.
+2024-09-18 21:38:12.887 -03:00 [ERR] Cartão vencido
+2024-09-18 21:49:36.946 -03:00 [ERR] Cartão vencido
+2024-09-18 21:55:30.828 -03:00 [ERR] Erro na consulta de transação
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 43
+2024-09-18 21:55:30.940 -03:00 [ERR] Erro ao fazer conexão
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 49
+2024-09-18 21:55:30.951 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 59
+   at Projeto1Bimestre.Controllers.PagamentosController.ObterSituacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Controllers\PagamentosController.cs:line 44
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-18 21:57:45.925 -03:00 [ERR] Erro na consulta de transação
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 43
+2024-09-18 21:57:45.926 -03:00 [ERR] Erro ao fazer conexão
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 49
+2024-09-18 21:57:45.928 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 59
+   at Projeto1Bimestre.Controllers.PagamentosController.ObterSituacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Controllers\PagamentosController.cs:line 44
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-18 21:58:15.593 -03:00 [ERR] Erro na consulta de transação
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 43
+2024-09-18 21:58:15.593 -03:00 [ERR] Erro ao fazer conexão
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 49
+2024-09-18 21:58:15.594 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 59
+   at Projeto1Bimestre.Controllers.PagamentosController.ObterSituacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Controllers\PagamentosController.cs:line 44
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-18 21:58:54.437 -03:00 [ERR] Erro na consulta de transação
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 43
+2024-09-18 21:58:54.438 -03:00 [ERR] Erro ao fazer conexão
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 49
+2024-09-18 21:58:54.439 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 59
+   at Projeto1Bimestre.Controllers.PagamentosController.ObterSituacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Controllers\PagamentosController.cs:line 44
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-18 22:03:29.874 -03:00 [ERR] Erro na consulta de transação
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 43
+2024-09-18 22:03:34.114 -03:00 [ERR] Erro ao fazer conexão
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 49
+2024-09-18 22:03:49.084 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 59
+   at Projeto1Bimestre.Controllers.PagamentosController.ObterSituacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Controllers\PagamentosController.cs:line 43
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)

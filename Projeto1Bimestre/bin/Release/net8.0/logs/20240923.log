@@ -1,0 +1,42 @@
+2024-09-23 15:06:38.433 -03:00 [ERR] Erro na consulta de transação
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 43
+2024-09-23 15:06:38.666 -03:00 [ERR] Erro ao fazer conexão
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 49
+2024-09-23 15:06:54.793 -03:00 [ERR] Erro na consulta de transação
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 43
+2024-09-23 15:06:54.842 -03:00 [ERR] Erro ao fazer conexão
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 49
+2024-09-23 15:07:06.870 -03:00 [ERR] Erro na consulta de transação
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 43
+2024-09-23 15:07:06.925 -03:00 [ERR] Erro ao fazer conexão
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 49
+2024-09-23 15:09:23.375 -03:00 [ERR] Erro na consulta de transação
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 43
+2024-09-23 15:09:23.613 -03:00 [ERR] Erro ao fazer conexão
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 49
+2024-09-23 18:57:02.706 -03:00 [ERR] Erro na consulta de transação
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 43
+2024-09-23 18:57:02.957 -03:00 [ERR] Erro ao fazer conexão
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 49
+2024-09-23 18:57:07.397 -03:00 [ERR] Erro na consulta de transação
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 43
+2024-09-23 18:57:07.444 -03:00 [ERR] Erro ao fazer conexão
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 49
+2024-09-23 19:14:08.570 -03:00 [ERR] Erro na consulta de transação
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 43
+2024-09-23 19:14:08.612 -03:00 [ERR] Erro ao fazer conexão
+System.Exception: Transação não encontrada
+   at Projeto1Bimestre.Services.PagamentoService.obterSituacaoTransacao(Int32 id) in C:\Users\humbe\Desktop\SextoSemestre\LP1\Projeto1Bimestre\Projeto1Bimestre\Services\PagamentoService.cs:line 49
